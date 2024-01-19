@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
+import { Route, Routes } from 'react-router-dom';
+import Home from './componenets/Home';
+
+
 
 function App() {
   return (
-    <div>
-      <h2>Porfolio</h2>
-
-    </div>
+    <Routes>
+      <Route path="/" Component={Home}></Route>
+    </Routes>
   );
 }
 
