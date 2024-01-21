@@ -1,0 +1,19 @@
+/* Primary Color: #3498db (Royal Blue) */
+/* Secondary Color: #2ecc71 (Emerald Green)
+Accent Color: #e74c3c (Crimson Red)
+Neutral Color: #ecf0f1 (Light Gray)
+Highlight Color: #f39c12 (Sunflower Yellow)
+ <Link to="/linkedIn" className="nav-link">
+              <FaLinkedin size={30} />
+            </Link>
+            <Link to="/linkedIn" className="nav-link">
+              <AiFillInstagram size={30} />
+            </Link>
+            <Link to="/linkedIn" className="nav-link">
+              <MdEmail size={30} />
+            </Link>
+ */
+
+ .N{
+    background: #ecf0f1;
+ }
