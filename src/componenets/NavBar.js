@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
 import { useMediaQuery } from "react-responsive";
 import Hamburger from "hamburger-react";
+import { Link as ScrollLink, Element } from "react-scroll";
 
 
 function NavBar() {
@@ -24,18 +25,18 @@ function NavBar() {
           <div>
             {isXlScreen ? (
               <div className="d-flex gap-3">
-                <Link to="/linkedIn" className="nav-link">
-                  Home
-                </Link>
-                <Link to="/linkedIn" className="nav-link">
-                  Projects
-                </Link>
-                <Link to="/linkedIn" className="nav-link">
+                <ScrollLink to="About" smooth={true} duration={500}>
                   About
-                </Link>
-                <Link to="/linkedIn" className="nav-link">
-                  Contact
-                </Link>
+                </ScrollLink>
+                <ScrollLink to="skills" smooth={true} duration={500}>
+                  Skills
+                </ScrollLink>
+                <ScrollLink to="projects" smooth={true} duration={500}>
+                  Projects
+                </ScrollLink>
+                <ScrollLink to="contacts" smooth={true} duration={500}>
+                  Contacts
+                </ScrollLink>
               </div>
             ) : (
               // Render hamburger for smaller screens
